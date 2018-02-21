@@ -1,0 +1,34 @@
+body {
+  font-family: sans-serif;
+  text-align: center; }
+
+#cc-container {
+  border: #999 solid 1px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: left;
+  display: inline-block; }
+
+#disclaimer {
+  font-size: 11px;
+  text-align: right;
+  padding-top: 10px; }
+
+#cc-container div select {
+  -webkit-appearance: menulist-button;
+  height: 35px;
+  width: 100px; }
+
+#cc-container div input {
+  height: 35px;
+  width: 175px;
+  padding: 10px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=style.css.map */

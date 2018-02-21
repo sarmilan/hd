@@ -1,0 +1,49 @@
+
+$grey: #999;
+
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+@mixin box-sizing($box-model) {
+    -webkit-box-sizing: $box-model;
+    -moz-box-sizing: $box-model;
+    box-sizing: $box-model;
+}
+
+body {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#cc-container {
+    border: $grey solid 1px;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+#disclaimer {
+    font-size: 11px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+#cc-container div select {
+    -webkit-appearance: menulist-button;
+    height: 35px;
+    width: 100px;
+}
+
+#cc-container div input {
+    height: 35px;
+    width: 175px;
+    padding: 10px;
+
+    @include border-radius(7px);
+    @include box-sizing(border-box);
+}

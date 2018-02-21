@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+
+    <div id="cc-container">
+        <h2>Currency Converter</h2>
+        <!--input value area-->
+        <div id="input">
+            <p>Type in amount and select currency:</p>
+            <input id="input-amount" type="text" placeholder="0.00" onkeyup="convertInput();">
+            <select id="input-country" onchange="convertInput();">
+                <option value="CAD" selected>CAD</option>
+                <option value="USD">USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <!--output value area-->
+        <div id="output">
+            <p>Converted amount:</p>
+            <input id="output-amount" placeholder="0.00">
+            <select id="output-country" onchange="convertInput();">
+                <option value="CAD">CAD</option>
+                <option value="USD" selected>USD</option>
+                <option value="EUR">EUR</option>
+            </select>
+        </div>
+        <div id="disclaimer">
+            <a href="https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html">Disclaimer</a>
+        </div>
+    </div>
+
+    <script src="js/converterScript.js"></script>
+
+</body>
+
+</html>
